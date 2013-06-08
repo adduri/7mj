@@ -3,7 +3,7 @@ class AdvertisementsController < ApplicationController
   # GET /advertisements.json
   respond_to :html, :xml, :json
 
-before_filter :authenticate_advertiser!, :except => [:index, :show]
+skip_before_filter :authenticate_advertiser!, :except => [:index, :show]
 
   def index
     @advertisements = Advertisement.all

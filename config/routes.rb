@@ -42,7 +42,8 @@ match 'demofalimytree' => 'site#demofalimytree'
 match 'rajasthan' => 'site#rajasthan'
 
 
-  
+    get "search" => "events#search", :as => "search"
+
 
 
 

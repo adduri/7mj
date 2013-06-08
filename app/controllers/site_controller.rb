@@ -23,4 +23,9 @@ class SiteController < ApplicationController
   
   def team
   end
+
+
+  
+  def search
+  end
 end

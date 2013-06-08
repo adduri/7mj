@@ -1,6 +1,9 @@
 class EventsController < ApplicationController
   # GET /events
   # GET /events.json
+
+  def search
+  end
   def index
     @events = Event.all
 
